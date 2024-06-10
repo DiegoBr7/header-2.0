@@ -22,7 +22,7 @@ header {
   background-color:#FFF2E7  ;
   height: 100vh;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   position: fixed;
   top: 0;
   right: -450px;
@@ -31,7 +31,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: 0.5s ease;
 }
 
@@ -177,7 +177,7 @@ button {
 /* ________HEADER-NAVEGADOR FORM 3____________________________________________________ */
 
 
-.pnlOne a {
+ .pnlOne a {
     margin-top: 10px;
     display: flex;
     text-decoration: none;
@@ -194,12 +194,14 @@ button {
   .painel {
 
     display: flex;
-    margin-left: 150px;
+    background-color: rgb(252, 222, 166);
+   margin-left: 100px;
   }
   
   .pnlOne img {
     width: 40px;
     height: 40px;
+    margin-top: 10px;
   }
   
   .pnlTwo {
@@ -231,27 +233,89 @@ button {
   .pnlTwo img {
     width: 40px;
     height: 40px;
+    margin-top: 10px;
   }
   
-  .carrinho img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  
+
   
 
 
 /* _________________MEDIAS_____________________________________ */
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1024px) {
+    .off-screen-menu {
+        display: none;
+      }
+      .ham-menu {
+        display: none;
+      }
+      nav{
+        display: flex;
+        justify-content: space-between;
+      }
+form{
+    margin-left: 30px;
+}
+
+.pesq input{
+    width: 400px;
+}
+
+.painel{
+    margin-right: 20px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .off-screen-menu {
     display: none;
   }
   .ham-menu {
     display: none;
   }
+
+   .pesq input{
+   width: 300px;
+   margin-left: -180px;
+  }
+
+  .pnlTwo p {
+ width: 90px;
+  }
+
+
+/* ___________________PAINEL_____________________________ */
+  .painel {
+  width: 100px;
+    display: flex;
+    background-color: rgb(252, 222, 166);
+   margin-left: 10px;
+  }
+    
+  .pnlOne p {
+    margin-top: 14px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .pnlOne img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .pnlTwo p {
+    margin-top: 14px;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+
+
 }
+  
+
+
 
 @media screen and (max-width: 767px) {
   .painel{
