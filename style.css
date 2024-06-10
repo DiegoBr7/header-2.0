@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+
+    background-color: rgb(252, 222, 166);
+
+  }
+/* ________________________HAMBURGUER______________________________________________________ */
+.off-screen-menu {
+  background-color:#FFF2E7  ;
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.5s ease;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 38px;
+  margin-bottom: 200px;
+}
+.off-screen-menu li {
+  transition: 0.3s ease;
+  text-decoration: none;
+  margin-top: 50px;
+  color: #1c4592;
+  cursor: pointer;
+}
+
+.off-screen-menu li:hover {
+  color: white;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  background-color: rgb(252, 222, 166);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.ham-menu span {
+  height: 6px;
+  width: 100%;
+  background-color: #a59c94;
+  
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color:  #1c4592;
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+ background-color:  #1c4592;
+}
+
+/* ________HEADER-NAVEGADOR____________________________________________________ */
+
+nav {
+  padding-bottom: 20px;
+}
+
+.log img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+/* ________HEADER-NAVEGADOR FORM 2____________________________________________________ */
+
+.pesq input {
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: var(--cor--input-One);
+  margin-top: 0px;
+  background-color: white;
+
+  font-size: 18px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pesq ::placeholder {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
+
+.pesq input:focus {
+  border-color: #007bff;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+form {
+  display: flex;
+  margin-left: 200px;
+}
+
+.btn img,
+button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor-header-One);
+    width: 35px;
+    height: 32px;
+    overflow: hidden;
+    margin-left: 20px;
+    }
+    
+    .btn img {
+        margin: 0px;
+        }
+
+.pesq,
+.btn {
+  margin-top: 20px;
+}
+/* ________HEADER-NAVEGADOR FORM 3____________________________________________________ */
+
+
+.pnlOne a {
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+  }
+  
+  .pnlOne p {
+    margin-top: 14px;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  
+  .painel {
+
+    display: flex;
+    margin-left: 150px;
+  }
+  
+  .pnlOne img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .pnlTwo {
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .pnlTwo a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .pnlTwo {
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .pnlTwo p {
+    margin-top: 14px;
+    margin-left: 5px;
+  }
+  
+  
+  
+  .pnlTwo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carrinho img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+
+
+/* _________________MEDIAS_____________________________________ */
+
+@media screen and (min-width: 768px) {
+  .off-screen-menu {
+    display: none;
+  }
+  .ham-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .painel{
+    display: none;
+  }
+    .pesq input {
+    display: none;
+  }
+  .btn{
+    display: none;
+  }
+}
+
+
+
+
